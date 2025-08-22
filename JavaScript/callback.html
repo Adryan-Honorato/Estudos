@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+        // Função chamada 'artigo' que simula buscar um artigo por ID
+        // Recebe três parâmetros:
+        // id -> ID do artigo
+        // callbacksucess -> função executada se der certo
+        // callbackerro -> função executada se der erro
+        function artigo(id, callbacksucess, callbackerro) {
+
+            // Se o ID for igual a 1, simula que encontrou o artigo
+            if (id === 1) {
+                callbacksucess('Funções', 'Aqui vamos ver as funções de callback');
+            } else {
+                // Se não for, executa a função de erro
+                callbackerro('Erro ao recuperar dados');
+            }
+        }
+
+        // Função de sucesso que recebe título e descrição
+        // Exibe no documento o título, uma linha horizontal e a descrição
+        let callbacksucess = function(title, descricao) {
+            document.write('<h1>' + title + '</h1>');
+            document.write('<hr/>');
+            document.write('<p>' + descricao + '</p>');
+        }
+
+        // Função de erro que recebe uma mensagem de erro
+        // Mostra um alerta na tela com o erro
+        let callbackerro = function(erro) {
+            alert(erro);
+        }
+
+        // Chama a função 'artigo' passando:
+        // ID = 1, função de sucesso e função de erro
+        artigo(1, callbacksucess, callbackerro);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

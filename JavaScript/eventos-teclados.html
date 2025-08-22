@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste de Eventos de Teclado</title>
+</head>
+<body>
+    <!-- 
+        onkeyup: é disparado quando uma tecla é SOLTA.
+        Exemplo: você pressiona a tecla e quando solta, executa o evento.
+    -->
+    <h4>O onkeyup é usado para fornecer uma ação assim que uma tecla é solta</h4>
+    <input 
+        onkeyup="alert('Você utilizou o onkeyup')" 
+        type="text"
+        placeholder="Digite algo..."
+    >
+
+    <!-- 
+        onkeypress: é disparado quando uma tecla que representa um caractere é PRESSIONADA.
+        OBS: teclas como Shift, Ctrl, Esc, etc., não disparam onkeypress.
+        Esse evento está obsoleto em alguns navegadores modernos e pode ser substituído por onkeydown ou onkeyup.
+    -->
+    <h4>O onkeypress é usado para fornecer um evento assim que uma tecla com caracteres é pressionada</h4>
+    <input 
+        onkeypress="alert('Você utilizou o onkeypress')" 
+        type="text"
+        placeholder="Digite algo..."
+    >
+
+    <!-- 
+        onkeydown: é disparado assim que QUALQUER tecla é PRESSIONADA.
+        Diferente do onkeypress, ele captura também teclas de controle como Shift, Ctrl, Alt, etc.
+    -->
+    <h4>O onkeydown é usado para fornecer um evento assim que uma tecla é pressionada</h4>
+    <input 
+        onkeydown="alert('Você utilizou o onkeydown')" 
+        type="text"
+        placeholder="Digite algo..."
+    >
+</body>
+</html>

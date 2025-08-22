@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+    <!-- Input com id, name e class -->
+    <input type="text" id="text1" placeholder="Digite aqui" name="Nome" class="class_text" />
+
+    <script>
+       // Retorna o elemento que possui o ID "text1" (único elemento)
+       console.log(document.getElementById("text1")); 
+       
+       // Retorna uma coleção (HTMLCollection) com todos os elementos que possuem a classe "class_text"
+       console.log(document.getElementsByClassName("class_text"));
+       
+       // Retorna uma coleção com todos os elementos <input> na página
+       console.log(document.getElementsByTagName("input"));
+       
+       // Retorna uma coleção com todos os elementos que possuem o atributo name="Nome"
+       console.log(document.getElementsByName("Nome"));
+    </script>
+</body>
+</html>

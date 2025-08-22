@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste</title>
+  <script>
+
+ // Definimos uma função chamada separandoCaracteres
+function separandoCaracteres() {
+  
+  // Guardamos o valor de 'entrada' dentro da variável 'caracter'
+  let caracter = document.getElementById('entrada').value;
+  
+  // Limpamos o input com id 'entrada'
+  document.getElementById('entrada').value = '';
+  
+  // Tiramos os espaços da variável (mas não estamos salvando o resultado)
+  caracter.trim();
+  
+  // Iniciamos um switch para comparar se 'caracter' é um número de 0 a 9
+  switch(caracter) {
+    case '0':
+    case '1':
+    case '2':
+    case '3':
+    case '4':
+    case '5':
+    case '6':
+    case '7':
+    case '8':
+    case '9':
+      // Se o caracter for um número, adiciona ele ao input 'numeros'
+      document.getElementById('numeros').value = caracter;
+      break;
+
+    default:
+      // Se não for um número, é tratado como texto e adicionado ao input 'textos'
+      document.getElementById('textos').value = caracter;
+      break;
+
+      caracter = ""
+  }
+}
+
+
+ 
+
+  </script>
+</head>
+<body>
+  
+  <input type="text" placeholder="Digite aqui" onblur="separandoCaracteres()" id="entrada">
+
+  <hr>
+  <span>Texto</span>
+  <input type="text" disabled="disabled" id="textos">
+  <span>Número</span>
+  <input type="text" disabled="disabled" id="numeros">
+  
+</body>
+</html>

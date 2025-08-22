@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="Calculadora.css" />
+    
+  </head>
+  <body>
+    <div id="container">
+      <input type="text" id="visor" placeholder="0" disabled/> <br>
+      <span class="sep_btn">
+        <button type="button" class="btn  btnLg" onclick="valor(0)">C</button>
+        <button type="button" class="btn  btn1" value=" / " onclick="valor(1)"> ÷ </button>
+        <button type="button" class="btn1  btn" value=" * " onclick="valor(2)"> x </button>
+    </span>
+      <span class="sep_btn">
+        <button type="button" class="btn1  btn"  value="7" onclick="valor(3)">7</button>
+        <button type="button" class="btn1  btn" value="8" onclick="valor(4)">8</button>
+        <button type="button" class="btn1  btn" value="9" onclick="valor(5)">9</button>
+        <button type="button" class="btn1  btn" value=" - " onclick="valor(6)"> - </button>
+    </span>
+      <span class="sep_btn">
+        <button type="button" class="btn1  btn" value="4" onclick="valor(7) ">4</button>
+        <button type="button" class="btn1  btn" value="5" onclick="valor(8)">5</button>
+        <button type="button" class="btn1  btn" value="6" onclick="valor(9)">6</button>
+        <button type="button" class="btn1  btn" value=" + " onclick="valor(10)"> + </button>
+    </span>
+      <span class="sep_final ">
+        <div>
+            <span class="sep_btn">
+        <button type="button" class="btn1  btn" value="1" onclick="valor(11)">1</button>
+        <button type="button" class="btn1  btn" value="2" onclick="valor(12)">2</button>
+        <button type="button" class="btn1  btn" value="3" onclick="valor(13)">3</button>
+    </span>
+    <span class="sep_btn">
+        <button type="button" class=" btnLg btn" value="0" onclick="valor(14)">0</button>
+        <button type="button" class="btn1  btn" value="." onclick="valor(15)">.</button>
+    </span>
+        </div>
+        <button type="button" class="btn  result" onclick="valor(16)">=</button>
+    </span>
+    </div>
+    <script src="Calculadora.js"></script>
+  </body>
+</html>

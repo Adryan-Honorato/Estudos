@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let operador = prompt("Digite Soma ou Subtração");
+      operador = operador.toLocaleLowerCase();
+
+      if (operador === "soma" || operador === "subtração") {
+        let number1 = prompt("Digite o primeiro número da operação");
+        number1 = parseInt(number1);
+
+        let number2 = prompt("Digite o segundo número da operação");
+        number2 = parseInt(number2);
+
+        console.log(
+          "O resultado da sua " +
+            operador +
+            " é " +
+            conta(operador, number1, number2)
+        );
+      } else {
+        alert("Alguma informação está incorreta, tente novamente ");
+        location.reload();
+      }
+
+      function conta(sinal, number1, number2) {
+        let resultado;
+
+        if (sinal === "soma") {
+          resultado = number1 + number2;
+        } else if (sinal === "subtração") {
+          resultado = number1 - number2;
+        } else {
+          resultado = "Sinal" + "Valor incorreto";
+        }
+
+        return resultado;
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

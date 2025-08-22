@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <script>
+        var calculo = prompt('Digite a operação (ex: 2 + 2)');
+        var resultado;
+
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById('inputDisplay').innerText = calculo;
+        });
+
+        function conta() {
+            try {
+                resultado = eval(calculo);
+                document.getElementById('inputDisplay').innerText = calculo + " = " + resultado;
+            } catch (error) {
+                document.getElementById('inputDisplay').innerText = "Erro na operação!";
+            }
+        }
+
+        function recarregar() {
+            location.reload();
+        }
+    </script>
+    <style>
+        #inputDisplay {
+            background: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 100px;
+            font-size: 20px;
+            margin: 20px auto;
+        }
+        .botoes {
+            display: flex;
+            justify-content: center;
+        }
+        .button {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .yellow { background: yellow; }
+        .red { background: red; }
+        .green { background: green; }
+        .grey { background: grey; }
+    </style>
+</head>
+<body>
+    <div id="inputDisplay"></div>
+    <div class="botoes">
+        <!--O onclick funciona como um clique só, dando um clique ele executa o que for destinado pra ele -->
+        <div class="button yellow" onclick="conta();" onmouseout="alert('clique')">Calculate</div>
+         <!--O ondblclick funciona como dois clique só, dando um clique ele executa o que for destinado pra ele -->
+        <div class="button red" ondblclick="conta()">Calculate</div>
+        <!--O onmouseup funciona com o clique e assim que solta o clique é executado, ele executa o que for destinado pra ele -->
+        <div class="button green" onmouseup="recarregar()">Reload</div>
+        <!--O onmouseover funciona assim que passa o mouse encima é executado, ele executa o que for destinado pra ele -->
+        <div class="button grey" onmouseover="alert('Press Yellow to calculate or double-click Red')">Help</div>
+        <!-- O onmouseout dispara o evento assim que tirar o mouse de cima --> 
+        
+    </div>
+</body>
+</html>

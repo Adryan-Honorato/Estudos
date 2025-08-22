@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delegação de Eventos</title>
+    <style>
+      body {
+        font-family: Arial;
+        padding: 20px;
+      }
+      #lista {
+        padding: 10px;
+        border: 1px solid black;
+        width: 300px;
+      }
+      .item {
+        background-color: lightgray;
+        margin: 5px 0;
+        padding: 8px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Delegação de Eventos</h1>
+
+    <button id="adicionar">Adicionar Item</button>
+
+    <div id="lista">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+    </div>
+
+    <script>
+      // 🔥 Selecionando o elemento pai
+      const lista = document.getElementById("lista");
+      const botaoAdicionar = document.getElementById("adicionar");
+
+      let contador = 4; // Contador para novos itens
+
+      // ➕ Evento para adicionar novos itens dinamicamente
+      botaoAdicionar.addEventListener("click", () => {
+        const novoItem = document.createElement("div");
+        novoItem.classList.add("item");
+        novoItem.innerText = `Item ${contador++}`;
+        lista.appendChild(novoItem);
+      });
+
+      // 🔥 Delegação de eventos
+      // Adicionamos o evento no PAI (#lista)
+      lista.addEventListener("click", (evento) => {
+        // Verifica se o elemento clicado tem a classe 'item'
+        if (evento.target.classList.contains("item")) {
+          // Faz alguma ação - aqui estamos alternando uma cor
+          evento.target.style.backgroundColor =
+            // Alterna a cor de fundo entre "lightgreen" e "lightgray" usando operador ternário:
+            // Se a cor atual for "lightgreen", muda para "lightgray", senão muda para "lightgreen".
+             evento.target.style.backgroundColor === "lightgreen"
+              ? "lightgray"
+              : "lightgreen";
+
+          console.log(`Você clicou em: ${evento.target.innerText}`);
+        }
+      });
+
+      // 🎯 Importante:
+      // - O evento está no pai (#lista), não nos filhos (.item).
+      // - Funciona tanto para os itens que já estavam na página
+      //   quanto para os que são criados dinamicamente.
+    </script>
+  </body>
+</html>

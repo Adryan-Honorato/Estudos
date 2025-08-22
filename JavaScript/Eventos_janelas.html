@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos de Janela</title>
+    <script>
+        // Você pode colocar os eventos aqui em vez de usar diretamente no HTML, exemplo:
+        /*
+        window.onresize = function(){
+            console.log('Evento onresize');
+        }
+
+        window.onscroll = function(){
+            console.log('Evento onscroll');
+        }
+        */
+    </script>
+</head>
+
+<!-- 
+onresize é um evento que executa a função quando a janela é redimensionada.
+onscroll é um evento que é executado quando a barra de rolagem é movida.
+ -->
+<body 
+    onresize="console.log('Evento onresize')" 
+    onscroll="console.log('Evento onscroll')"
+>
+    <!-- Texto grande para ativar a barra de rolagem e testar o evento onscroll -->
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        <!-- (Conteúdo grande removido para simplificar aqui, mas você pode deixar como está no seu código para testar) -->
+        <!-- Esse conteúdo é propositalmente grande para que apareça a barra de rolagem no navegador -->
+    </div>
+</body>
+</html>

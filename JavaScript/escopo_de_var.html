@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+        // Escopos em JavaScript: Global, Função e Bloco
+
+        // Escopo Global: variável declarada com let no escopo global
+        let nome = 'Vanessa';
+
+        // Escopo de Função: variável declarada dentro da função com var
+        function x() {
+            var nome2 = 'Isadora'; // nome2 existe somente dentro da função x
+        }
+
+        // Escopo de Bloco: variável declarada com var dentro de um bloco if
+        if (true) {
+            var nome3 = 'Sabrina'; // var ignora escopo de bloco e será 'visível' fora do bloco
+        }
+
+        // Exibe no console a variável global (funciona)
+        console.log(nome); // 'Vanessa'
+
+        // Tenta exibir nome2, mas vai dar erro pois está declarada dentro da função x e nunca foi executada
+        console.log(nome2); // ERRO: nome2 is not defined
+
+        // Exibe nome3 porque var ignora o escopo de bloco, logo é acessível aqui
+        console.log(nome3); // 'Sabrina'
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

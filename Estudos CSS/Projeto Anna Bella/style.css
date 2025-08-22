@@ -1,0 +1,62 @@
+body{
+    background: #d2d2c1 url('fundo.png');
+    font: 16px Arial, Helvetica, sans-serif;
+    height: auto;
+    margin: auto;
+    padding: auto;
+}
+.container {
+    display: flex;
+    flex-direction: column; /* Para empilhar os elementos verticalmente */ /* Para centralizar horizontalmente */
+    align-items: center; /* Para centralizar verticalmente */
+    height: 100vh; /* Isso garante que o contêiner ocupe toda a altura da viewport */
+    text-align: center; /* Isso centraliza o texto dentro do contêiner */
+}
+
+img{
+margin-bottom: 25px;
+
+}
+  #Menu {
+ display: flex;
+box-align:"center"
+width="900px";
+background-color: #c5c5b2;
+padding: 25px 165px;
+gap: 10px;
+}
+
+#Menu a:hover, .seletor{
+color: aliceblue;
+
+}
+ 
+a{
+text-decoration: none;
+color: #4b566a;
+font-weight: 800;
+white-space: nowrap;
+}
+ h3{
+font-weight: 1000;
+font-size: 16px;
+color: #585855;
+}
+
+#Sobre{
+width: 895px;
+background-color: beige;
+padding: 10px 0px 10px 5px;
+
+}
+
+
+h4 {
+    bottom: 0;
+    text-align: center;
+     padding: 10px 0;
+}
+
+.Fotos{
+ border: solid  #c5c5b2 11px;
+}

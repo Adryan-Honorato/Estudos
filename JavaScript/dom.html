@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação do DOM</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+        .caixa {
+            background-color: lightgray;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="titulo">Título Original</h1>
+
+    <div class="caixa">Caixa 1</div>
+    <div class="caixa">Caixa 2</div>
+    <div class="caixa">Caixa 3</div>
+
+    <p name="paragrafo">Parágrafo 1</p>
+    <p name="paragrafo">Parágrafo 2</p>
+
+    <button onclick="alterarTexto()">Alterar Texto</button>
+    <button onclick="alterarEstilo()">Alterar Estilo</button>
+    <button onclick="adicionarElemento()">Adicionar Elemento</button>
+    <button onclick="removerElemento()">Remover Elemento</button>
+
+    <div id="container"></div>
+
+    <script>
+        // 🔍 Selecionar elementos
+
+        // Por ID
+        const titulo = document.getElementById("titulo");
+
+        // Por classe (retorna uma coleção)
+        const caixas = document.getElementsByClassName("caixa");
+
+        // Por tag (retorna uma coleção)
+        const paragrafos = document.getElementsByTagName("p");
+
+        // Por nome (retorna uma coleção)
+        const elementosPorNome = document.getElementsByName("paragrafo");
+
+        // Usando querySelector (pega o primeiro que encontrar)
+        const primeiraCaixa = document.querySelector(".caixa");
+
+        // Usando querySelectorAll (pega todos que combinam)
+        const todasAsCaixas = document.querySelectorAll(".caixa");
+
+
+        // ✍️ Alterar texto, HTML e atributos
+        function alterarTexto() {
+            titulo.innerText = "Título Alterado"; // Altera o texto interno (sem tags)
+            primeiraCaixa.innerHTML = "<b>Caixa Negrito</b>"; // Altera com HTML embutido
+
+            paragrafos[0].innerText = "Primeiro parágrafo alterado";
+            paragrafos[1].setAttribute("style", "color: blue; font-weight: bold;");
+        }
+
+
+        // 🎨 Alterar estilos (CSS)
+        function alterarEstilo() {
+            titulo.style.color = "red";
+            titulo.style.fontSize = "40px";
+
+            // Alterando múltiplas caixas usando forEach
+            todasAsCaixas.forEach(caixa => {
+                caixa.style.backgroundColor = "lightblue";
+                caixa.style.padding = "20px";
+            });
+        }
+
+
+        // ➕ Criar e adicionar elementos no DOM
+        function adicionarElemento() {
+            const novoElemento = document.createElement("p"); // Cria um elemento <p>
+            novoElemento.innerText = "Novo parágrafo criado via JS";
+            novoElemento.style.color = "green";
+
+            const container = document.getElementById("container");
+            container.appendChild(novoElemento); // Adiciona dentro da div #container
+        }
+
+
+        // ❌ Remover elementos do DOM
+        function removerElemento() {
+            const container = document.getElementById("container");
+
+            // Remove o último filho, se existir
+            if (container.lastChild) {
+                container.removeChild(container.lastChild);
+            }
+        }
+
+
+        // 🔄 Outras manipulações úteis (exemplos fora dos botões)
+
+        // Alterar atributos
+        titulo.setAttribute("title", "Passe o mouse aqui"); // Adiciona um tooltip
+
+        // Ler atributos
+        const valor = titulo.getAttribute("id"); // Retorna "titulo"
+        console.log("ID do título é:", valor);
+
+        // Alterar classes
+        titulo.classList.add("destaque");  // Adiciona uma classe
+        titulo.classList.remove("destaque"); // Remove uma classe
+        titulo.classList.toggle("ativo");  // Adiciona se não tiver, remove se tiver
+    </script>
+
+</body>
+</html>

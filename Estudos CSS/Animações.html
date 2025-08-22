@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes changeColor {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+
+        }
+
+        @keyframes moviment {
+            0% {
+                transform: translateX(-100%)
+            }
+
+            50% {
+                transform: translateX(100%)
+            }
+
+            100% {
+                transform: translateX(-100%)
+            }
+
+        }
+
+        @keyframes escala {
+            0% {
+                transform: scale(100%)
+            }
+
+            25% {
+                transform: scale(50%);
+            }
+
+            50% {
+                transform: scale(100%)
+            }
+
+            75% {
+                transform: scale(150%);
+            }
+
+            100% {
+                transform: scale(100%)
+            }
+
+        }
+
+        @keyframes rotacao {
+            0% {
+                transform: rotateY(100deg)
+            }
+
+            100% {
+                transform: rotateY(0deg)
+            }
+
+        }
+
+        #fade {
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            animation: changeColor 3s infinite;
+        }
+
+        #movimento {
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            animation: moviment 3s infinite;
+        }
+
+        #escala {
+            background-color: yellow;
+            width: 200px;
+            height: 200px;
+            animation: escala 3s linear infinite;
+
+        }
+
+        #Rotação {
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+            animation: rotacao 3s linear infinite;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="fade">
+
+    </div> <br> <br>
+    <div id="movimento">
+
+    </div> <br> <br>
+    <div id="escala"></div>
+    <br> <br>
+    <div id="Rotação"></div>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+body{
+  font-family: "Trebuchet MS", Helvica, sans-serif;
+}
+#topo{
+height: 230px;
+background: url(fundo.png);
+min-width: 600px;
+display: flex;
+justify-content: center;
+
+}
+#Logo-menu{
+position: absolute; 
+}
+
+#logo{
+    margin: 32px 0;
+     width: 152px;
+    height: 66px;
+      } 
+
+      #menu {
+        width: 580px;
+        display: flex;
+        align-items: center;
+        background-color: #b2002c;
+    }
+
+
+#menu a{
+  font-size: 0.9em;  
+text-decoration: none;
+color: white;
+padding: 15px;
+line-height: 5px;
+
+}
+ 
+#detalhe-top{
+margin-left: 650px;
+ width: 176px;
+ height: 179px;
+
+  }
+
+#menu a:hover{
+
+background-color: #ca0536;
+}
+ #Home{
+  margin: 20px auto 0 auto;
+  width: 70%;
+  border: solid;
+  display: flex;
+  gap: 20px;
+ }
+
+#entrevista{
+width: 100%;
+background: url(fundo-caixa.png);
+padding: 5px;
+
+}
+
+#entrevista ul{
+  
+width: 130px;
+list-style-type: none;
+margin: 10px auto;
+background-color: white;
+padding: 5px;
+}
+
+#entrevista ul li{
+margin: 0px 7px 30px 7px;
+white-space: nowrap;
+
+}
+#entrevista ul li:nth-child(8)
+{
+margin: 0 7px 5px 7px;
+}
+
+#entrevista h3{
+margin: 0 auto;
+width: 150px;
+background-color: #28496f;
+color: white;
+padding: 5px;
+}
+#news{
+margin-top: 10px;
+width: 100%;
+background: url(fundo-caixa.png);
+padding: 5px;
+}
+#news h3{
+  margin: 0 auto;
+  width: 150px;
+  background-color: #28496f;
+  color: white;
+  padding: 5px;
+
+}
+
+#ultima_entrevista{
+width: 40%;
+background: url(fundo-caixa.png);
+ height: 280px; 
+ 
+}
+
+#ultima_entrevista h3{
+  margin: 0 auto;
+  width: 240px;
+  background-color: #28496f;
+  color: white;
+  padding: 5px;
+
+
+}
+
+#ultima_entrevista h4{
+margin: 10px auto 5px 0;
+background:  #b2002c;
+color: black;
+font-size: 15px;
+width: 225px;
+height: 20px;
+text-align: start;
+
+}
+
+#ultima_entrevista div{
+background: white;
+width: 240px;
+margin: 0 auto;
+text-align: center;
+
+}
+
+#ultima_entrevista img{
+width: 230px;
+}
+
+#ultima_entrevista p{
+  text-align: start;
+}

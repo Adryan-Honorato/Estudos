@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        /* Classe estilo_1: fundo verde, texto branco */
+        .estilo_1 {
+            color: white;
+            background: green;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            padding: 25px 0;
+        }
+
+        /* Classe estilo_2: fundo vermelho, texto preto */
+        .estilo_2 {
+            color: black;
+            background: red;
+            width: 150px;
+            height: 100px;
+            text-align: center;
+            padding: 50px 0;
+        }
+    </style>
+
+    <script>
+        // Função que troca a classe do elemento com id 'modificando'
+        function trocandoClass() {
+            // Substitui a classe atual pela classe 'estilo_2'
+            document.getElementById('modificando').className = 'estilo_2';
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Div com a classe inicial 'estilo_1' -->
+    <div id="modificando" class="estilo_1">
+        Modificando a classe do elemento
+    </div>
+
+    <hr />
+
+    <!-- Botão que, ao ser clicado, executa a função 'trocandoClass' -->
+    <button type="button" onclick="trocandoClass()">
+        Modifique a class
+    </button>
+</body>
+</html>

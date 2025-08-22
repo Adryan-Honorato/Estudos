@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	background: #f4f2ec url(img/fundo.png) repeat-x;
+	font: 12px "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+}
+
+#container {
+	width: 1080px;
+	margin: 0 auto;
+}
+
+header{
+width: 100%;
+display: flex;
+justify-content: space-between;
+margin: 20px 0;
+}
+
+ header img{
+width: 248px;
+height: 21px;
+margin-top: 30px;
+}
+
+nav ul{
+list-style-type: none;
+display: flex;
+gap: 15px;
+margin-top: 32px;
+padding-right: 10px;
+}
+
+
+a:link, a:active, a:visited {
+	color: #af670a;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #227115;
+}
+
+main{
+    width: 100%;
+    display: flex;
+}
+
+
+iframe{
+width: 310;
+height: 170px;
+border: none;
+}
+
+#postagem{
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+#postagem h3{
+    color: #227115;
+    font-size: 1.0em;
+    margin: 10px 0 15px 0;
+}
+
+#Exposições{
+width: 310px;
+margin: 15px 0 0 25px;
+}
+
+#Exposições ul{
+ margin-left: 40px;
+    }
+
+#Historia{
+width: 310px;
+margin: 15px 0 0 25px;
+}
+
+#Historia p{
+  margin-bottom: 10px;
+   }
+ aside{
+width: 350px;
+
+ }
+
+#marcar{
+    width: 100%;
+       background: #cdc8b1;
+    padding: 15px 27px 27px 27px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside h4{
+    width: 100%;
+    color: #86521a;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+#number{
+width: 30px;
+}
+
+#Enviar{
+    margin-top: 10px;
+    background: #9b9271;
+    color: white;
+    width: 100%;
+    height: 40px;
+    font-size: 1.2em;
+}
+
+#galeria{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 15px 27px 27px 27px;
+    background: #ebe7dd;
+    }
+
+#galeria img{
+    width: 93px;
+    height: 93px;
+}
+
+
+#galeria a{
+width: 126px;
+height: 133px;
+background: url(img/fundo-foto.png);
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+footer{
+width: 80;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+margin-top: 20px;
+padding-bottom: 30px;
+}
+
+
+footer ul{
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}

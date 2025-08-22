@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}   
+ body{ background: black;}
+
+.container{
+    width: auto;
+    height: auto;
+   
+    
+}
+
+text{
+color: #cacacd;
+font-size: 15px;
+}
+
+#carrinho{
+    border-radius: 10px;
+    margin-left: auto;
+     width: 450px;
+    background: #18181b;
+    font-family: 'Inter', sans-serif;
+    position: sticky;
+
+}
+#box1{
+border-radius: 10px 10px 0 0;
+background: #18181b;
+padding: 20px 0 17px 10px;
+display: flex;
+border-bottom: solid #303035 1px;
+}
+#fecha{
+    width: 20px;
+    height: 20px;
+    margin-top: auto;
+    margin-left: auto;
+    
+    }
+ ul{
+    margin-top: 10px;
+    list-style-type: none;
+    height: 550px;
+    overflow-y: scroll;
+ }  
+
+
+ img{
+    width: 130px;
+    height: 130px;
+    border-radius: 10%;
+    margin-right: 15px;
+ }
+
+ li{   
+margin: 0;
+padding: 10px;
+}
+
+p {
+    color:  #cacacd;
+    font-size: 17PX;
+    max-width: 170px; 
+    height: 40px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+span { 
+    
+    display: flex;
+    color: white;
+    font-size: 11px;
+   margin-right: 0;
+   flex-grow: 1;
+}
+
+button {
+    margin-top: 20px;
+    font-weight: bold;
+    background: transparent;
+    border: solid #303035 2px;
+    width: 40px;
+    height: 40px;
+    color: #9333ea;
+    border-radius: 25%;
+    font-size: 30px; 
+    text-align: center;      
+    display: flex;
+    justify-content: center;
+    align-items: center;                       
+}
+
+ 
+
+li button:hover{
+ border: solid #9333ea 2px;
+backdrop-filter: brightness(150%);
+}
+ 
+.Valor{
+padding: 10px 0;
+margin-top: 0px;
+}
+
+k{
+font-size: 17px;
+width: 100px;
+margin-top: 30px;
+margin-bottom: auto;
+margin-right: 40px;
+}
+
+.quantidade{
+text-align: center;
+margin: 30px auto;
+width: 30px;
+height: auto;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: #603689;
+    border-radius: 10px;
+}
+
+
+
+::-webkit-scrollbar-track {
+    background-color:   transparent; 
+    border-radius: 10px;
+    
+}
+ #barra_inferiror{
+border-top: solid 1px #303035;
+width: 450px;
+height: 345px;
+}
+
+
+#total{
+display: flex;
+justify-content: space-between;
+margin: 30px 60px auto 50px;
+
+width: 350px;
+font-size: 20px;
+
+}
+
+#cupom{
+
+display: flex;
+margin: 10px 60px 0 50px;
+width: 350PX;
+height: 40px;
+padding: auto;
+color: #9333ea;
+align-items: center; 
+justify-content: flex-end;
+
+}
+
+#cupom_png{
+margin-top: 0;
+margin-right: 10px;
+width: 30px;
+height: 30px;
+}
+
+#cupom button{
+font-weight: 0;
+border: none;
+width: auto;
+height: auto;
+ color: #9333ea;
+ font-size: 20px;
+margin-top: 0;
+
+}
+
+#comprar{
+display: flex;
+width: 400px;
+height: 70px;
+align-items: center;
+justify-content: center;
+border-radius: 10px;
+color: white;
+border: solid #9333ea;
+background-color: transparent;
+margin: 40px auto;
+font-size: 24px;}
+
+#comprar:hover{
+    backdrop-filter: brightness(150%);
+}

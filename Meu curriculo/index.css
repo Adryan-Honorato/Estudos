@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+ 
+.curriculo{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 0 auto;
+    width: 794px;
+    border-left: solid 50px rgb(4, 4, 141);
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.dados{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.objetivo p{
+    width: 680px;
+    border-left: dotted  1px;
+    padding-left: 10px;
+}
+
+h3{
+color: rgb(4, 4, 141);
+padding-top: 20px;
+font-size: 20px;
+}
+
+h4{
+    color: rgb(4, 4, 141); 
+    display: flex;
+    gap: 5px;
+    font-size: 19px;
+}
+
+h5{
+    color: rgb(97, 93, 93);
+    font-size: 17px;
+    margin-bottom: 2px;
+}
+
+data{
+    font-size: 15px;
+    color: rgb(97, 94, 94);
+}
+
+p{
+    width: 680px;
+    margin: 5px;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   color: rgb(97, 94, 94);
+   font-size: 17px;
+
+}
+
+li{
+    margin-left: 20px;
+  
+}
+
+i{
+    color: rgb(4, 4, 141);
+}
+
+

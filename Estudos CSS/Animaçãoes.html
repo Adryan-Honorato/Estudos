@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação</title>
+    <style>
+        @keyframes animacao-caixa{
+            from{ margin-top: 0px;}
+            to{ margin-top: 500px;
+            height: 275px;}
+        }
+
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #caixa{
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            background: black;
+            animation: animacao-caixa 2s 0s infinite alternate;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="caixa">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,326 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+  font-family: "Trebuchet MS", Helvica, sans-serif;
+  font-size: 1rem;
+}
+
+header{
+height: 230px;
+background: url(imagens/fundo.png);
+min-width: 600px;
+display: flex;
+justify-content: center;
+
+}
+
+
+nav{
+position: absolute; 
+width: 700px;
+margin-right: 90px;
+}
+
+
+
+
+#logo{
+    margin: 32px 0;
+     width: 152px;
+    height: 66px;
+
+      } 
+
+#menu{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #b2002c;
+  text-align: center;
+    }
+
+
+#menu a{
+width: 100%;
+font-size: 15px;  
+text-decoration: none;
+color: white;
+padding: 20px;
+line-height: 5px;
+}
+ 
+#detalhe-top{
+margin-left: 650px;
+ width: 176px;
+ height: 179px;
+
+  }
+
+#menu a:hover{
+
+background-color: #ca0536 ;
+}
+
+ main{
+  margin: 20px auto 0 auto;
+  width: 80%;
+  min-width: 700px;
+  display: flex;
+  gap: 30px;
+ }
+
+ h3{
+  padding: 3%;
+  width: 90%;
+  margin: auto;
+  color: white;
+  background-color: #28496f;
+  }
+
+
+
+
+#coluna_1{
+width: 33%;
+min-width: 180px;
+}
+
+#entrevista{
+padding-top: 5px;
+background: url(imagens/fundo-caixa.png);
+height: 475px;
+
+}
+
+#entrevista ul{
+width: 90%;
+min-width: 130px;
+list-style-type: none;
+margin: 10px auto;
+background-color: white;
+font-size: 18px;
+padding: 10px 0 10px 0;
+}
+
+#entrevista ul li{
+margin: 0px 7px 30px 7px;
+white-space: nowrap;
+
+}
+#entrevista ul li:nth-child(8)
+{
+margin: 0 7px 5px 7px;
+}
+
+#news{
+padding: 5px 0 10px 0;
+margin-top: 20px;
+width: 100%;
+background: url(imagens/fundo-caixa.png);
+
+}
+
+
+
+#coluna_2{
+width: 33%;
+min-width: 180px;
+}
+
+#ultima_entrevista{
+width: 100%;
+background: url(imagens/fundo-caixa.png);
+padding: 5px 0 10px;
+ }
+
+
+
+#ultima_entrevista article{
+  background: white;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 5px;
+  
+  }
+
+#news form{
+width: 90%;
+display: flex;
+background: white;
+justify-content: center;
+flex-direction: column;  
+margin: 10px auto 0;
+padding: 10px 0;
+gap: 5px;}
+
+#news label{
+display: flex;
+justify-content: center;
+gap: 10px;
+font-weight: bold;
+}
+
+
+#news p{
+visibility: hidden;
+width: 200px;
+position: absolute;
+background: #28496f;
+color: white;
+padding: 15px;}
+
+#news div{
+border: solid;
+width: 17px;
+height: 17px;
+border: solid 1px;
+border-radius: 100%;
+font-size: 15px;
+text-align: center;
+}
+
+#news div:hover p{
+visibility: visible;
+}
+
+#news input{
+ padding: 7px;
+ border-radius: 5px;
+border: solid rgba(128, 128, 128, 0.767) 1px;
+width: 80%;
+margin: 0 auto;
+}
+
+#news button{
+width: 50%;
+margin: 0 auto;
+padding: 5px;
+background: #ca0536;
+border: solid 1px;
+color: white;
+font-size: 17px;
+font-weight: bold;
+}
+
+#ultima_entrevista h4{
+margin: 10px auto 10px 0;
+background:  #b2002c;
+color: black;
+width: 100%;
+height: 20%;
+text-align: start;
+padding: 5px;
+white-space: nowrap;
+font-size: 13px;
+}
+
+#ultima_entrevista img{
+width: 86%;
+}
+
+#ultima_entrevista p{
+  width: 90%;
+  text-align: start;
+  margin: 10px auto;
+} 
+
+.lista_noticias{
+padding: 5px 0;
+margin-top: 20px;
+background: url(imagens/fundo-caixa.png);
+width: 100%;
+height: 50%;
+}
+.lista_noticias ul{
+width: 90%;
+margin: 5px auto;
+list-style-type: none;
+background: white;
+
+}
+
+.lista_noticias img{
+width: 100%;
+max-width: 110px;
+}
+
+.lista_noticias a{
+padding: 10px;
+display: flex;
+text-decoration: none;
+color: black;
+}
+
+.lista_noticias h4{
+font-size: 12px;
+color: rgb(107, 107, 243);
+margin-left: 8px;
+
+}
+
+.lista_noticias p{
+  margin: 5px 0 0 5px;
+  width: 100%;                 
+  display: -webkit-box;            
+-webkit-box-orient: vertical;   
+  overflow: hidden;               
+  -webkit-line-clamp: 2;          
+  line-clamp: 2;                  
+  line-height: 1;
+  align-items: center;
+          
+}
+#coluna_3{
+  width: 33%;
+  }
+  
+  #destaque{
+    width: 100%;
+    background: url(imagens/fundo-caixa.png);
+    padding: 5px 0 10px;
+  }
+  
+  #destaque article{
+    background: white;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  
+  #destaque h4{
+    margin: 10px auto 10px 0;
+    background:  #b2002c;
+    color: white;
+    width: 100%;
+    height: 20%;
+    text-align: start;
+    padding: 5px;
+    white-space: nowrap;
+    font-size: 13px;
+  }
+  
+  #destaque img{
+   width: 86%;
+  }
+  
+  #destaque p{
+    width: 90%;
+    text-align: start;
+    margin: 10px auto;
+  }
+
+footer{
+margin-top: 50px;
+background-color: #28496f;
+color: white;
+height: 60px;
+padding: 20px 25%;
+
+}
+

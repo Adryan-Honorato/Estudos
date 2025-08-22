@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja</title>
+</head>
+<body>
+    <table border="2px"> <!--Abre tabela e defina a borda com expessura de 2px-->
+  <!--Normalmente você cria as linhas (tr) e em seguida cria as colunas da linha dentro dela(td)-->      
+
+<tr id="TITULOS"> <!--Tr são as linhas-->
+<th>ID</th> <!--Th são Celulas com maior destaque usada para titulos de tabelas-->
+<th>Produto</th>
+<th>Categoria</th>
+<th>Preço(R$)</th>
+<th>Quantidade em Estoque</th>  
+
+
+
+</tr>
+<tr id="1">
+<td>1</td><!--td as colunas-->
+<td>Camiseta</td>
+<td>Vestuario</td>
+<td>29.99</td>
+<td>50</td>
+
+
+
+
+
+</tr>
+<tr id="2">
+<td>2</td>
+<td>Calça Jeans</td>
+<td>Vestuario</td>
+<td>59.99</td>
+<td>30</td>
+</tr>
+<tr id="3">
+<td>3</td>
+<td>Tênis Esportivo</td>
+<td>Calçado</td>
+<td>79.99</td>
+<td>50</td>
+</tr>
+<tr id="4">
+<td>4</td>
+<td>Celular</td>
+<td>Eletrônico</td>
+<td>899.99</td>
+<td>10</td>
+</tr>
+<tr id="5">
+<td>5</td>
+<td>Livro</td>
+<td>Livraria</td>
+<td>19.99</td>
+<td>100</td>
+</tr>
+<tr id="6">
+<td>6</td>
+<td>Fone de ouvido</td>
+<td>Eletrônico</td>
+<td>49.99</td>
+<td>40</td>
+</tr>
+<tr>
+<td colspan="5"><hr></td><!--Colspan é o atriburo para especificar quantas colunas uma célula deve ocupar horizontalmente em uma tabela-->
+
+</tr>
+
+<tr id="total">
+    <td colspan="2" rowspan="3">Total de Produtos</td> <!--e o rowspan é um atributo para especificar quantas linhas uma célula deve ocupar verticalmente em uma tabela-->
+    <td>Vestuario:</td>
+    <td colspan="2">130</td>
+</tr>
+<tr>
+<td>Eletrônicos:</td>
+<td colspan="2">50</td>
+</tr>
+<tr>
+<td>Livraria:</td>
+<td colspan="2">100</td>
+</tr>
+</table><!--fecha a tabela-->
+    
+</body>
+</html>

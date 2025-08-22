@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale='11'">
+    <title>Document</title>
+</head>
+<body>
+  <!-- 
+    onfocus: Este evento é disparado assim que o elemento (neste caso, um campo de texto) recebe o foco. 
+    O foco pode ser recebido quando o usuário clica no campo ou navega até ele usando a tecla Tab. 
+    É útil para indicar que o campo está ativo e o usuário pode começar a digitar.
+    
+    onblur: Este evento é acionado quando o elemento perde o foco. 
+    Isso pode ocorrer quando o usuário clica fora do campo ou navega para outro elemento. 
+    O onblur é frequentemente utilizado para validar a entrada do usuário ou para limpar informações que não são mais necessárias.
+-->
+<input type="text" onfocus="console.log('Recebeu foco');" onblur="console.log('Perdeu o foco');">
+
+<!-- 
+    onchange: Este evento é disparado quando o valor de um elemento muda e o usuário sai do elemento. 
+    No caso de um <select>, isso ocorre quando o usuário seleciona uma nova opção. 
+    O onchange é útil para executar ações com base na seleção do usuário, como atualizar outros elementos da página.
+-->
+<select onchange="console.log('Mudou');">
+    <option>Selecione</option>
+    <option value="1">Valor 1</option>
+    <option value="2">Valor 2</option>
+</select>
+
+</body>
+</html>

@@ -1,0 +1,231 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(img/fe51ed_3c74859ad0dc49e481b778bd2c3086ae~mv2.webp);
+    background-attachment: fixed;
+    height: 100%;
+    font-family: "arial black", arial-w01-black, arial-w02-black, "arial-w10 black", sans-serif;
+
+
+}
+
+#nav-menu {
+    font-style: normal;
+    color: white;
+    font-weight: 700;
+    transition: color 0.2s ease-in-out 0.3s;
+}
+
+
+#nav-menu:hover {
+    color: #ffe5ad;
+    background: none;
+}
+
+#sobre {
+    margin-top: 150px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10%;
+}
+
+
+.sobre_text {
+    color: #ffe5ad;
+    min-width: 300px;
+    width: 40%;
+    text-align: start;
+    letter-spacing: 0em;
+
+}
+
+p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: start;
+
+}
+
+#artitas{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+    
+}
+
+
+
+
+.artista{
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: solid rgba(255, 255, 255, 0.247) 1px;
+    padding-bottom: 20px;
+}
+
+#vanessa{
+    margin-bottom: 0;
+}
+
+
+.perfil {
+    min-width: 300px;
+    width: 40%;
+    text-align: center;
+    
+}
+
+
+
+
+.foto_perfil {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    padding: 10px 0;
+}
+
+
+
+.orcamento {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+    color: #ffe5ad;
+    flex-wrap: nowrap;
+
+    
+}
+
+
+.orcamento-cell{
+    display: none;
+}
+
+.galeria_img{
+    min-width: 400px;
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    
+}
+
+.galeria_img img{
+   width: 40%;
+   border-radius: 20px;
+
+}
+
+.galeria_img h2{
+    width: 100%;
+    text-align: center;
+}
+
+#localizacao{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+
+#descricao_local{
+    min-width: 400px;
+    width: 40%;
+
+    
+  
+}
+
+#descricao_local i{
+  margin-right: 10px;
+  color: #ffe5ad;
+
+  
+}
+
+#descricao_local a{
+text-decoration: none;
+color: white;
+
+    
+  }
+
+
+
+i {
+    color: white;
+    font-size: 25px;
+}
+
+h2 {
+    color: white;
+    font-family: "Vampiro One", system-ui;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    color: #ffe5ad;
+    letter-spacing: 0em;
+    font-family: "Permanent Marker", cursive;
+}
+
+
+
+@media (max-width: 1300px) {
+    .sobre_img {
+        display: none;
+    }
+
+    .artista{
+        display: flex;
+        flex-wrap: wrap;
+        border: none;
+
+    }
+
+    .orcamento-cell{
+        margin-top: 30px;
+        display: flex;
+        gap: 10px;
+        color: #ffe5ad;
+        flex-wrap: nowrap;
+
+        border-bottom: solid rgba(255, 255, 255, 0.247) 1px;
+        
+    }
+    
+    
+    .orcamento-cell i{
+        color: white;
+        font-size: 25px;
+    }
+
+    .orcamento{
+        display: none;
+    }
+
+    #localizacao{
+        display: block;
+    }
+}

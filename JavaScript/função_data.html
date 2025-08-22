@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       // Criando um novo objeto Date para obter a data atual
+var date = new Date();
+
+// Mostrando a data atual formatada no console
+console.log(date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear());
+
+// Para adicionar um dia ou retirar, usamos setDate
+date.setDate(date.getDate() + 1);
+console.log("Data com +1 dia: " + date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear());
+
+date.setDate(date.getDate() - 1);
+console.log("Data de volta ao dia atual: " + date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear());
+
+// Para adicionar ou retirar meses, usamos setMonth
+date.setMonth(date.getMonth() + 1);
+console.log("Data com +1 mês: " + date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear());
+
+date.setMonth(date.getMonth() - 1);
+console.log("Data de volta ao mês atual: " + date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear());
+
+// Para adicionar ou retirar anos, usamos setFullYear
+date.setFullYear(date.getFullYear() + 1);
+console.log("Data com +1 ano: " + date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear());
+
+date.setFullYear(date.getFullYear() - 1);
+console.log("Data de volta ao ano atual: " + date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear());
+
+// Podemos passar parâmetros para criar novas datas, como 15/01/2017
+var data1 = new Date(2017, 0, 15); // Janeiro é mês 0
+console.log("Data 1: " + data1);
+
+// Outra data: 20/02/2017
+var data2 = new Date(2017, 1, 23); // Fevereiro é mês 1
+console.log("Data 2: " + data2);
+
+// Exibindo os milissegundos desde 1970 até as datas fornecidas
+console.log("Milissegundos da Data 1: " + data1.getTime());
+console.log("Milissegundos da Data 2: " + data2.getTime());
+
+// Calculando a diferença em milissegundos entre as datas e convertendo para um valor absoluto
+var diffMilissegundos = Math.abs(data1 - data2);
+console.log("Diferença em milissegundos entre Data 1 e Data 2: " + diffMilissegundos);
+var miliDias = 1*24*60*60*1000
+console.log("1 dia tem " + miliDias + " Milissegudos")
+ var resultado = Math.ceil( diffMilissegundos / miliDias)
+ console.log("A diferença de dias  é " + resultado + " Dias")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

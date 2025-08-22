@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+ 
+let a = [
+    Math.round(Math.random()),
+    Math.round(Math.random()),
+    Math.round(Math.random()),
+    Math.round(Math.random()),
+    Math.round(Math.random()),
+    Math.round(Math.random()),
+];
+
+
+let binarioString = a.join("");
+
+
+function converterBinarioParaDecimal(binario) {
+    let resultado = 0; 
+   
+    for ( let i = 0;i < binario.length; i++) {
+ 
+        resultado += (binario[i] * Math.pow(2, binario.length - 1 - i));
+    }
+    return resultado; 
+}
+
+
+console.log("Número binário gerado:", binarioString); 
+console.log("Resultado decimal:", converterBinarioParaDecimal(binarioString));
+
+    </script>
+  </head>
+  <body></body>
+</html>

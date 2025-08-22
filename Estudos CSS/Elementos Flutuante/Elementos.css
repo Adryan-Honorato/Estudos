@@ -1,0 +1,28 @@
+#principal{
+width: 950px;
+}
+
+.noticia{
+padding: 5px;
+width: 280px;
+float: left;
+background-color: #e5e5e5;
+margin: 7px;}
+
+.galeria{
+ width: 280px;
+ background-color: white;
+ padding: 13px;
+ float: left;
+}
+
+a{
+text-decoration: none;
+font-weight: bold;
+color: blue;
+}
+ .clear{
+clear: both;
+
+
+ }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      let str = "Eu e você?";
+// length conta quantos caracteres tem a string, incluindo espaços e pontuação
+console.log(str.length); // Retorna o número de caracteres na string (incluindo espaços e pontuação)
+
+// at consegue mostrar o caractere referente ao número do índice, aceita índices negativos
+console.log(str.at(-10)); // Retorna o caractere no índice -10. Se a string for curta, pode retornar undefined
+
+// charAt faz o mesmo que o at, mas não aceita números negativos
+console.log(str.charAt(1)); // Retorna o caractere no índice 1
+
+// charCodeAt retorna o valor UTF-16 do caractere no índice especificado
+console.log(str.charCodeAt(2)); // Retorna 32, o código UTF-16 do caractere espaço " "
+
+// [ ] funciona como o charAt, mas se o índice estiver fora dos limites, retorna undefined
+console.log(str[3]); // Retorna o caractere no índice 3, ou undefined se estiver fora do limite
+
+// slice() extrai parte da string baseada nos índices fornecidos.
+// Ele aceita índices negativos, que contam a partir do final da string.
+console.log(str.slice(-5, -1)); // Extrai caracteres da posição -5 até -1 (não inclui o último)
+
+// substring() é semelhante ao slice(), mas não aceita índices negativos.
+// Se valores negativos forem passados, são tratados como zero.
+console.log(str.substring(-11, 9)); // Extrai caracteres da posição 0 até 9 (negativo é tratado como 0)
+
+// substr() extrai parte da string, mas os parâmetros indicam o início e a quantidade de caracteres.
+// OBS: substr() está obsoleto e não é recomendado para novos projetos.
+console.log(str.substr(5, 4)); // Extrai 4 caracteres a partir da posição 5
+
+// toLowerCase() transforma toda a string em minúsculas
+console.log(str.toLowerCase()); 
+
+// toUpperCase() transforma toda a string em maiúsculas
+console.log(str.toUpperCase());
+
+// concat() junta duas ou mais strings e pode substituir o operador +
+console.log("EU".concat(str.slice(2, 9))); // Junta "EU" com parte da string
+
+// trim() remove espaços em branco do início e do fim
+console.log(str.trim()); 
+
+// trimStart() remove espaços em branco do início
+console.log(str.trimStart());
+
+// trimEnd() remove espaços em branco do final
+console.log(str.trimEnd());
+
+// padStart() preenche a string desde o início até o comprimento especificado
+console.log("22".padStart(4, "1")); // Preenche com "1" até atingir 4 caracteres
+
+// padEnd() preenche a string desde o final até o comprimento especificado
+console.log("22".padEnd(4, "3")); // Preenche com "3" até atingir 4 caracteres
+
+// O repeat() retorna uma string com um número de cópias de uma string
+console.log("oi ".repeat(3)); // Repete a string "oi " três vezes
+
+// split() converte uma string em um array, dividindo-a com base no separador especificado
+let missao = "recuperar dados da string";
+let arrayTeste = missao.split(" ");
+console.log(arrayTeste[0]); // Retorna "recuperar", o primeiro elemento do array
+
+// replace() substitui a primeira correspondência de uma palavra dentro da string
+let game = "Vamos trocar, depois de trocar vamos jantar";
+console.log(game.replace("trocar", "jogar")); // Substitui "trocar" por "jogar" na primeira ocorrência
+
+// Para usar o replace para substituir todas as correspondências temos que usar o /g 
+console.log(game.replace(/trocar/g, "jogar"));
+
+// e também o replace diferencia minuscula e maiuscula, para capitar o texto mesmo que for maisculo podemos usar o /i 
+let tr = game.slice(24,30).toUpperCase()
+game = game.replace("trocar", tr)
+console.log(game.replace(/trocar/i, "jogar" ))
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
