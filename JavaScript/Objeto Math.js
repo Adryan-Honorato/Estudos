@@ -34,7 +34,7 @@ console.log("Math.pow(2, 3):", Math.pow(2, 3)); // 8 (2³)
 console.log("Math.sqrt(16):", Math.sqrt(16));   // 4 (raiz quadrada)
 
 // Números aleatórios
-console.log("Math.random():", Math.random()); 
+console.log("Math.random():", Math.random());
 // Gera número entre 0 e 1 (pseudoaleatório)
 // Exemplo: gerar um número inteiro entre 1 e 10
 console.log("Número aleatório entre 1 e 10:", Math.floor(Math.random() * 10) + 1);

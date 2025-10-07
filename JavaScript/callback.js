@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
-    <script>
+
         // Função chamada 'artigo' que simula buscar um artigo por ID
         // Recebe três parâmetros:
         // id -> ID do artigo
@@ -40,9 +33,4 @@
         // ID = 1, função de sucesso e função de erro
         artigo(1, callbacksucess, callbackerro);
 
-    </script>
-</head>
-<body>
-    
-</body>
-</html>
+
